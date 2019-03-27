@@ -16,12 +16,17 @@ def selection_sort(arr):
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
-    # Iterates backwards through the range of the length of the arr
+    # Iterate backwards through the range list length
     for i in range(len(arr)-1, 0, -1):
+        # Iterate through remaining indicies
         for j in range(i):
+            # Check if item at j is bigger than item at j+1 index
             if arr[j] > arr[j+1]:
+                # If item at j is larger, save to temporary var
                 temp = arr[j]
+                # Assign smaller item to current index
                 arr[j] = arr[j+1]
+                # Assign temp var to item at j+1 index
                 arr[j+1] = temp
     return arr
 

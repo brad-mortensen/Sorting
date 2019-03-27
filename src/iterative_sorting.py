@@ -30,12 +30,15 @@ def bubble_sort(arr):
                 arr[j+1] = temp
     return arr
 
+
 arr = [23, 978906, 236, 27, 78, 8976, 252, 54, 7870]
 print(bubble_sort(arr))
 
 # STRETCH: implement the Count Sort function below
 
-# https://www.w3resource.com/python-exercises/data-structures-and-algorithms/python-search-and-sorting-exercise-10.php is how I got this weird sort :).
+''' https://www.w3resource.com/python-exercises/data-structures-and-algorithms/python-search-and-sorting-exercise-10.php
+is how I got this weird sort :).'''
+
 
 def count_sort(arr, maximum=-1):
     # Add one to the maximum input
